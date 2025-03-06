@@ -1,0 +1,58 @@
+/* 🔹 Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Barra de Navegación */
+.navbar-brand {
+    font-weight: bold;
+    background-color: #3ebd82;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+/* 🔹 Sección de Introducción */
+#inicio {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+#inicio h2 {
+    font-size: 2rem;
+}
+
+/* 🔹 Tarjetas de Pokémon */
+/* Ajuste de la imagen en la tarjeta */
+.pokemon-card .card {
+    display: flex; /* Usa Flexbox para alinear el contenido de la tarjeta */
+    flex-direction: column; /* Coloca los elementos de la tarjeta en columna (imagen en la parte superior, cuerpo abajo) */
+    justify-content: space-between; /* Asegura que el contenido esté bien distribuido */
+}
+
+/* Ajusta el tamaño de la imagen dentro de la tarjeta */
+.pokemon-card img {
+    object-fit: cover; /* Hace que la imagen cubra el espacio sin distorsionarse */
+    height: 150px;  /* Establece la altura de la imagen en 200px (ajustable según tus necesidades) */
+}
+
+/* Hace que el cuerpo de la tarjeta ocupe el espacio restante */
+.card-body {
+    flex-grow: 1; /* Hace que el contenido del cuerpo ocupe todo el espacio disponible en la tarjeta */
+}
+
+
+/* 🔹 Diseño responsivo */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
